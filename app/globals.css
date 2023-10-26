@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --primary-color: #fefefe;
+  --primary-white-bg: #f8faff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+.bg-primary-white {
+  background-color: var(--primary-white-bg);
+}
+.leftDivHome {
+  clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 0% 100%);
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+.color-primary-white {
+  background-color: #f5f5f5;
+}
+.LegendLineChart {
+  position: absolute !important;
+  top: 0px !important;
+  right: 100px !important;
+}
+.circle {
+  border-radius: 50%;
+}
+.pieColorFirst {
+  background-color: #98d89e !important;
+}
+.pieColorSecond {
+  background-color: #ee8484 !important ;
+}
+.pieColorThird {
+  background-color: #f6dc7d !important;
+}
+.model-container {
+  background-color: rgba(0, 0, 0, 0.77);
+}
